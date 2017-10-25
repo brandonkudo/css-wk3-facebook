@@ -1,0 +1,96 @@
+$main-layout: (
+  columns: 5,
+  // gutter: 60px,
+);
+
+// $main-layout: (
+//   columns: 3,
+//   // gutter: 5px,
+// );
+
+body {
+  background-color: $gray;
+  margin: 0;
+  margin-top: 0;
+  box-sizing: border-box;
+  font-family: $helvetica;
+}
+
+ul {
+  list-style: none;
+}
+
+header {
+  background-color: $blue;
+  color: white;
+  width: 100%;
+  margin: 0;
+}
+
+.container {
+  @include grid-container;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.nav-container {
+  @extend .container;
+}
+
+.column-one {
+  @include grid-column(1, $main-layout);
+  background-color: $gray;
+  overflow: none;
+}
+
+.column-two {
+  @include grid-column(4, $main-layout);
+  // @include grid-container;
+  overflow: hidden;
+}
+
+.hero {
+  @include grid-column(4, $main-layout);
+  background-color: white;
+  margin: 0;
+  width: 100%;
+}
+
+.hero-img {
+  background-image: url("../img/cyberwomanhero.jpg");
+  background-size: cover;
+  min-height: 30vh;
+  }
+
+.sub-column-one {
+  @include grid-column(5, $main-layout);
+  background-color: white;
+  margin: 0;
+  overflow: hidden;
+  width: 66%;
+}
+
+.sub-column-two {
+  @include grid-column(5, $main-layout);
+  margin: 0 -35px 0 0;
+  overflow: hidden;
+  float: right;
+  width: 33%;
+  box-sizing: border-box;
+}
+
+.posts, .comments {
+  @include grid-column(5, $main-layout);
+  background-color: white;
+  border: 1px solid $gray-dk;
+  border-radius: 5px;
+}
+
+.column-two-boxes {
+  @include grid-column(5, $main-layout);
+  background-color: white;
+  margin-bottom: 5px;
+  margin: 5px;
+  box-sizing: border-box;
+}

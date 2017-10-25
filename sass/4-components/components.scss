@@ -1,0 +1,39 @@
+#message-button {
+  background-color: $blue;
+  border: none;
+  color: white;
+  float: right;
+  padding: 3px 60px 3px 60px;
+  border-radius: 3px;
+  font-family: $lucida-grande;
+  font-weight: lighter;
+}
+
+.four-buttons {
+  background-color: $gray-lt;
+  color: $black-lt;
+  border: 1px solid $gray-dk;
+  margin: 0;
+  float: left;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 8px;
+}
+
+.four-buttons:nth-child(n+2) {
+  border-left: none;
+}
+
+.four-buttons:first-child {
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;
+}
+
+.four-buttons:last-child {
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+}
+
+form {
+  float: right;
+}

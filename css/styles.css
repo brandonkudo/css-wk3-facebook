@@ -1,0 +1,126 @@
+#profpic {
+  height: 200px;
+  width: 200px; }
+
+body {
+  background-color: #E9EBEE;
+  margin: 0;
+  margin-top: 0;
+  box-sizing: border-box;
+  font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif; }
+
+ul {
+  list-style: none; }
+
+header {
+  background-color: #3D5B96;
+  color: white;
+  width: 100%;
+  margin: 0; }
+
+.container, .nav-container {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto; }
+  .container::after, .nav-container::after {
+    clear: both;
+    content: "";
+    display: block; }
+
+.column-one {
+  width: calc(20% - 24px);
+  float: left;
+  margin-left: 20px;
+  background-color: #E9EBEE;
+  overflow: none; }
+
+.column-two {
+  width: calc(80% - 36px);
+  float: left;
+  margin-left: 20px;
+  overflow: hidden; }
+
+.hero {
+  width: calc(80% - 36px);
+  float: left;
+  margin-left: 20px;
+  background-color: white;
+  margin: 0;
+  width: 100%; }
+
+.hero-img {
+  background-image: url("../img/cyberwomanhero.jpg");
+  background-size: cover;
+  min-height: 30vh; }
+
+.sub-column-one {
+  width: calc(100% - 40px);
+  float: left;
+  margin-left: 20px;
+  background-color: white;
+  margin: 0;
+  overflow: hidden;
+  width: 66%; }
+
+.sub-column-two {
+  width: calc(100% - 40px);
+  float: left;
+  margin-left: 20px;
+  margin: 0 -35px 0 0;
+  overflow: hidden;
+  float: right;
+  width: 33%;
+  box-sizing: border-box; }
+
+.posts, .comments {
+  width: calc(100% - 40px);
+  float: left;
+  margin-left: 20px;
+  background-color: white;
+  border: 1px solid #B0B4B9;
+  border-radius: 5px; }
+
+.column-two-boxes {
+  width: calc(100% - 40px);
+  float: left;
+  margin-left: 20px;
+  background-color: white;
+  margin-bottom: 5px;
+  margin: 5px;
+  box-sizing: border-box; }
+
+#message-button {
+  background-color: #3D5B96;
+  border: none;
+  color: white;
+  float: right;
+  padding: 3px 60px 3px 60px;
+  border-radius: 3px;
+  font-family: "Lucida Grande", "Tahoma", "Verdana", "Arial", sans-serif;
+  font-weight: lighter; }
+
+.four-buttons {
+  background-color: #F6F7F9;
+  color: #4C4F56;
+  border: 1px solid #B0B4B9;
+  margin: 0;
+  float: left;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 8px; }
+
+.four-buttons:nth-child(n+2) {
+  border-left: none; }
+
+.four-buttons:first-child {
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px; }
+
+.four-buttons:last-child {
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px; }
+
+form {
+  float: right; }
+
+/*# sourceMappingURL=styles.css.map */
